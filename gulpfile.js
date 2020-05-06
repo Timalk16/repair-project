@@ -31,14 +31,4 @@ const browserSync = require('browser-sync').create();
         .pipe(browserSync.stream());
 };
 
-
-//minify css
-(cb) => {
-    src('css/*.css')
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(dest('dist'));
-    cb();
-};
-
 exports.serve = bs;
