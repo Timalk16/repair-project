@@ -406,9 +406,9 @@ body {
 .contacts__phone {
   margin-right: 45px;
   color: #E3B873;
-  transition: all 0.4s ease; }
+  transition: 0.4s; }
   .contacts__phone:hover {
-    font-size: 16px; }
+    color: #fff; }
 
 .hero {
   position: relative;
