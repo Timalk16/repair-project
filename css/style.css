@@ -542,6 +542,8 @@ body {
     display: none; }
   .hero__content {
     max-width: 22.86rem; }
+  .hero__title {
+    margin-bottom: 0.1rem; }
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
@@ -561,6 +563,7 @@ body {
     max-width: 22.98rem;
     line-height: 0.7; }
   .hero__text {
+    margin-top: 1.8rem;
     line-height: 1.55;
     max-width: 27.2rem;
     margin-bottom: 2.9rem; }
