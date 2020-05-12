@@ -359,6 +359,9 @@ body {
 img {
   max-width: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
 .section {
   padding: 60px 0; }
 
@@ -562,7 +565,7 @@ img {
 
 .card__pricetag {
   position: absolute;
-  left: 1rem;
+  left: 0;
   bottom: -1.48rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
@@ -672,22 +675,24 @@ img {
     min-height: 27.40rem; }
   .card__text {
     margin-left: 0;
-    max-width: 23.50rem; }
+    max-width: 23.50rem;
+    margin-top: -13.80rem; }
   .card__pricetag {
     padding: 1rem 2.65rem;
     text-align: center; }
   .design__text {
     min-height: 15rem;
-    max-width: 22rem; }
+    max-width: 22rem;
+    margin-top: -14rem; }
   .design__description {
-    font-size: 1.07rem;
-    max-width: 26.30rem;
+    max-width: 25rem;
     line-height: 1.70rem;
-    font-size: 1.07rem; }
+    font-size: 1.25rem; }
   .design__pricetag {
     left: -0.4rem;
     padding: 1rem 3.70rem;
-    margin-left: 0; }
+    margin-left: 0;
+    text-align: center; }
   .section-title__heading {
     font-size: 1.80rem;
     line-height: 138.6%; } }
