@@ -551,7 +551,7 @@ img {
 
 .card__list {
   margin: 0;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 0 1rem;
   font-size: 1.07rem;
   line-height: 1.79rem;
   color: #959595;
@@ -567,6 +567,17 @@ img {
   background-color: #E3B873;
   color: #fff;
   padding: 1.214rem 2.6rem; }
+
+.design__section-title {
+  margin-bottom: 1.71rem; }
+
+.design__description {
+  margin: 0 auto;
+  font-size: 1.43rem;
+  max-width: 52.93rem;
+  margin-bottom: 2.78rem;
+  text-align: center;
+  line-height: 1.93rem; }
 
 @media screen and (max-width: 1440px) {
   .button--outline {
@@ -595,7 +606,15 @@ img {
   .types__card {
     margin-bottom: 4.29rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design {
+    background-color: #131313; }
+    .design__section-title {
+      color: #fff; }
+    .design__card {
+      margin-bottom: 5.7rem; }
+    .design__description {
+      color: #fff; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -637,4 +656,18 @@ img {
     margin-bottom: 2.9rem; }
   .hero__button {
     min-height: 3.64rem;
-    min-width: 28rem; } }
+    min-width: 28rem; }
+  .card__text {
+    margin-left: 0; }
+  .card__pricetag {
+    min-width: 16rem;
+    min-height: 1.40rem;
+    text-align: center; }
+  .design__description {
+    font-size: 1.07rem;
+    max-width: 21.86rem;
+    line-height: 1.70rem;
+    font-size: 1.07rem; }
+  .section-title__heading {
+    font-size: 1.80rem;
+    line-height: 138.6%; } }
