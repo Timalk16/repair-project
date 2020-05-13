@@ -349,7 +349,7 @@ template {
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 1px solid rgba(54, 54, 54, 0.5);
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
@@ -631,6 +631,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 2rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -642,6 +644,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     min-width: 36.36rem;
