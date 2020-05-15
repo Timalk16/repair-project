@@ -1,4 +1,4 @@
-/*
+
 document.addEventListener("DOMContentLoaded", function(event){
     const modal = document.querySelector('.modal')
     const modalBtn = document.querySelectorAll('[data-toggle=modal]')
@@ -22,17 +22,16 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 
     // закрытие модального окна при клике вне него
-    document.addEventListener("click", function(e) {
-        if (e.target.className === "modal-click") {
-         modal.classList.remove('modal--visible');
+    window.onclick = function (event) {
+        if(event.target == modal)
+            modal.classList.remove('modal--visible');
         }
-      });
     
     closeBtn.addEventListener('click', swichModal);
 }); 
-*/
 
 
+/*
 $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
@@ -54,3 +53,4 @@ $(document).ready(function () {
 });
     
 });
+*/
