@@ -15,13 +15,15 @@
         width: 100%
         height: 100%
         background-color: rgba($dark, 0.7)
-        &::after
-            content: ''
-            position: absolute
-            bottom: 0
-            left: 0
-            right: 0
-            width: 100%
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 3.46rem
+        background-color: $dark
     &__content
         position: relative
         max-width: 47.85rem
@@ -43,7 +45,7 @@
     &__instagram
         position: absolute
         left: 0
-        top: 2.5rem
+        top: 0
         max-width: 80px
         height: 100%
     &__scroll-down
@@ -53,6 +55,7 @@
         display: flex
         justify-content: center
         align-items: center
+        z-index: 3
         left: 0
         bottom: 0
         min-width: 17.6rem
@@ -85,6 +88,7 @@
         text-decoration: none
         color: $primary
         transform: rotate(90deg)
+        margin-top: 4.40rem
         line-height: 0.8
         transition: all 0.4s ease
         font-size: 1.1rem

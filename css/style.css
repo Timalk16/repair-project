@@ -496,13 +496,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
-    .hero::before::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%; }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     position: relative;
     max-width: 47.85rem;
@@ -524,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero__instagram {
     position: absolute;
     left: 0;
-    top: 2.5rem;
+    top: 0;
     max-width: 80px;
     height: 100%; }
   .hero__scroll-down {
@@ -534,6 +536,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
     left: 0;
     bottom: 0;
     min-width: 17.6rem;
@@ -566,6 +569,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg);
+    margin-top: 4.40rem;
     line-height: 0.8;
     transition: all 0.4s ease;
     font-size: 1.1rem; }
