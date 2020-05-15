@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event){
         }
     });
 
-
+    
     // закрытие модального окна при клике вне него
     window.onclick = function (event) {
         if(event.target == modal)
