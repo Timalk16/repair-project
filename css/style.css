@@ -415,6 +415,12 @@ template {
 .col-50 {
   width: 50%; }
 
+.col-60 {
+  width: 60%; }
+
+.col-40 {
+  width: 40%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -637,9 +643,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
-    flex-basis: 50%;
+    flex-basis: 38%;
     margin-bottom: 2.42rem;
     padding-bottom: 2rem; }
+    .swiper-slide__text--down {
+      margin-bottom: 5.50rem; }
   .swiper-slide__heading {
     font-size: 1.29rem;
     line-height: 1.78rem;
@@ -647,6 +655,19 @@ h1, h2, h3, h4, h5, h6 {
     color: #E3B873;
     text-transform: uppercase;
     margin-bottom: 0.64rem; }
+    .swiper-slide__heading--top {
+      margin-top: 2rem; }
+    .swiper-slide__heading--down {
+      margin-top: -1.50rem; }
+  .swiper-slide__description {
+    font-size: 1.0rem; }
+  .swiper-slide__image {
+    margin-left: 2rem;
+    max-width: 1000rem;
+    max-height: 34.43rem; }
+
+.swiper__image {
+  margin-left: 50rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -670,8 +691,9 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/arrow-next.svg") no-repeat center; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
   width: auto;
-  bottom: -2p; }
+  bottom: -2px; }
 
 .types__section-title {
   margin-bottom: 2.1rem;
@@ -794,6 +816,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 18px 48px; } }
 
 @media screen and (max-width: 992px) {
+  html {
+    font-size: 11px; }
   .nav {
     display: none; }
   .hero__instagram {

@@ -3,9 +3,11 @@
         display: flex
         flex-wrap: wrap
         &__text
-            flex-basis: 50%
+            flex-basis: 38%
             margin-bottom: 2.42rem
             padding-bottom: 2rem
+            &--down
+                margin-bottom: 5.50rem
         &__heading
             font-size: 1.29rem
             line-height: 1.78rem
@@ -13,6 +15,18 @@
             color: $primary
             text-transform: uppercase
             margin-bottom: 0.64rem
+            &--top
+                margin-top: 2rem
+            &--down
+                margin-top: -1.50rem
+        &__description
+            font-size: 1.0rem
+        &__image
+            margin-left: 2rem
+            max-width: 1000rem
+            max-height: 34.43rem
+    &__image
+        margin-left: 50rem
     &-pagination
         &-bullet
             background-color: rgba($light, 0.3)
@@ -33,5 +47,6 @@
         &-next
             background: url('../img/arrow-next.svg') no-repeat center
 .swiper-container-horizontal>.swiper-pagination-bullets
+    position: absolute
     width: auto
-    bottom: -2p
+    bottom: -2px

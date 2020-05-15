@@ -39,6 +39,7 @@ $(document).ready(function () {
     //слайдер
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
+        spaceBetween: 40,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -53,7 +54,7 @@ $(document).ready(function () {
          var bullets = $('.swiper-pagination');
 
 
-        next.css('left', prev.width() + 10 + bullets.width() + 10 )
-        bullets.css('left', prev.width() + 10 )
+        next.css('left', prev.width() + 36 + bullets.width() + 36 )
+        bullets.css('left', prev.width() + 36 )
     });
 
