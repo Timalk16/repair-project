@@ -385,10 +385,17 @@ template {
 .down {
   position: relative; }
   .down__button {
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-    transition: box-shadow 0.3s; }
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 32px;
+    height: 32px;
+    background-color: #E3B873;
+    background: url(https://snipp.ru/img/scroll_top.png) 50% 50% no-repeat;
+    border-radius: 50%;
+    opacity: 0.5; }
     .down__button:hover {
       box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.4); }
 
@@ -396,6 +403,17 @@ template {
   width: 90%;
   max-width: 89.36rem;
   margin: auto; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  width: 50%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -416,22 +434,45 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   padding: 60px 0; }
-
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-weight: 400; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background-color: #E3B873;
-      margin: 0 10px; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
+  .section-title {
+    text-align: center; }
+    .section-title--left {
+      text-align: left;
+      line-height: 2.64rem;
+      font-size: 1.18rem; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      font-weight: 400; }
+      .section-title__heading--primary {
+        color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        margin-left: 2.30rem;
+        width: 90px;
+        height: 1px;
+        background-color: #E3B873; }
+    .section-title__text {
+      margin-top: 1.60rem;
+      font-size: 1.30rem;
+      line-height: 2.07rem;
+      max-width: 30.35rem; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background-color: #E3B873;
+        margin: 0 10px; }
 
 .header {
   position: fixed;
@@ -592,17 +633,49 @@ h1, h2, h3, h4, h5, h6 {
   .title--primary {
     color: #E3B873; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.29rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2p; }
+
 .types__section-title {
   margin-bottom: 2.1rem;
   font-weight: 400; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__text {
   position: relative;

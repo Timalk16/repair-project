@@ -12,12 +12,35 @@ h1, h2, h3, h4, h5, h6
     margin: 0
 .section
     padding: 60px 0
-.section
+    &--dark
+        background-color: $dark
+        color: $light
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One', cursive
-        font-weight: 400
+        &--left
+            text-align: left
+            line-height: 2.64rem
+            font-size: 1.18rem
+        &__heading
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive
+            font-weight: 400
+            &--primary
+                color: $primary
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ''
+                margin-left: 2.30rem
+                width: 90px
+                height: 1px
+                background-color: $primary
+        &__text
+            margin-top: 1.60rem
+            font-size: 1.30rem
+            line-height: 2.07rem
+            max-width: 30.35rem
         &__image
             display: flex
             justify-content: center
