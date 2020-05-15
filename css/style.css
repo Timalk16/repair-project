@@ -337,7 +337,7 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
-    padding: 18px 48px; }
+    padding: 18px 48px !important; }
     .button--outline:hover {
       box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4); }
 
@@ -411,7 +411,8 @@ img {
   max-width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0; }
 
 .section {
   padding: 60px 0; }
@@ -450,7 +451,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-right: 1.50rem; }
   .logo a {
     text-transform: uppercase;
     text-decoration: none;
@@ -497,21 +499,21 @@ h1, h2, h3, h4, h5, h6 {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 2.17rem; }
+    margin-left: 4.10rem; }
   .hero__title {
-    margin-bottom: 0.9rem;
-    font-weight: 400; }
+    font-weight: 400;
+    padding-bottom: 0.8rem; }
   .hero__text {
     font-size: 1.57rem;
     line-height: 131%;
     max-width: 500px;
     margin: 0;
-    margin-bottom: 3rem; }
+    margin-bottom: 3.50rem; }
   .hero__button {
-    margin-right: 17px;
-    padding: 18px 29px; }
+    margin-right: 1.21rem;
+    padding: 1.29rem 2.07rem; }
     .hero__button--outline {
-      padding: 18px 48px; }
+      padding: 1.29rem 2.07rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -702,6 +704,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px; }
   .nav__item {
     margin-right: 1rem; }
+  .hero__content {
+    margin-left: 4rem; }
   .button--outline {
     padding: 18px 48px; } }
 
@@ -767,14 +771,20 @@ h1, h2, h3, h4, h5, h6 {
     .hero__content {
       max-width: 22.98rem;
       line-height: 0.7; }
+    .hero__title {
+      font-size: 1.90rem;
+      line-height: 132.83%; }
     .hero__text {
-      margin-top: 1.8rem;
+      font-size: 1.35rem;
+      margin-top: rem;
       line-height: 1.55;
-      max-width: 27.9rem;
-      margin-bottom: 2.9rem; }
+      margin-bottom: 2.75rem; }
     .hero__button {
-      min-height: 3.64rem;
-      min-width: 28rem; }
+      font-size: 1.13rem;
+      min-height: 4.30rem;
+      min-width: 28.20rem; }
+  .button--primary {
+    margin-bottom: 2.20rem; }
   .card {
     margin-left: 0.2rem; }
     .card__image {
