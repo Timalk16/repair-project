@@ -26,10 +26,19 @@
             display: none
         &__content
             margin-left: 0
+    .swiper
+        &-slide
+            &__text
+                flex-basis: 42%
 @media screen and ( max-width: 845px )
     .row
         flex-direction: column
         align-items: center
+    .col
+        &-40
+            width: 100% 
+        &-60
+            width: 100%  
     .types
         &__card
             margin-bottom: 4.07rem
@@ -44,9 +53,18 @@
             margin-bottom: 5.7rem
         &__description
             color: $light
+    .swiper
+        &-slide
+            &__image
+               padding-top: 3rem 
 
-    
+                  
 @media screen and ( max-width: 570px )
+    .row
+        &--left
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
     .contacts
         &__phone
             margin-right: 0
@@ -75,8 +93,17 @@
         &__scroll-down
             display: none
 @media screen and ( max-width: 390px )
+    .row
+        &--left
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
     .col
         margin-bottom: 2rem
+        &-40
+            width: 100% 
+        &-60
+            width: 100%  
     .logo
         padding-right: 7rem
     .hero
@@ -85,21 +112,21 @@
             max-width: 22.98rem
             line-height: 0.7 
         &__title
-            font-size: 1.90rem
+            font-size: 2.04rem
             line-height: 132.83%
-            
         &__text
             font-size: 1.35rem
-            margin-top: rem
+            margin-top: 0.5rem
             line-height: 1.55
-            margin-bottom: 2.75rem
+            margin-bottom: 3.30rem
         &__button
-            font-size: 1.13rem
+            text-align: center
+            font-size: 1.20rem
             min-height: 4.30rem
             min-width: 28.20rem
     .button
         &--primary
-                margin-bottom: 2.20rem
+                margin-bottom: 2.60rem
     .card
         margin-left: 0.2rem
         &__image
@@ -126,10 +153,37 @@
             padding: 1rem 3.70rem
             margin-left: 0
             text-align: center
-    .section-title
-        &__heading
-            font-size: 1.80rem
-            line-height: 138.6%
+    .section
+        &-title
+            &__text
+                margin-top: 2rem
+                max-width: 26.70rem
+            &__word
+                &::after
+                    display: none
+            &--left
+                font-size: 2rem
+            &__heading
+                font-size: 1.80rem
+    .swiper
+        &-button
+            &-prev, &-next
+                bottom: 20px
+        &-slide
+            &__text
+                flex-basis: 47%
+                &--down
+                    margin-top: 1rem
+            &__description
+                font-size: 1.18rem
+                display: block
+            &__image
+                min-width: 20rem
+                max-height: 10rem
+                margin-left: 0
+    .swiper-container-horizontal>.swiper-pagination-bullets
+        bottom: 20px
+                
 @media screen and ( max-width: 359px )
     html
         font-size: 10px
