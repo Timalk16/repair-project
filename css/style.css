@@ -699,6 +699,9 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   bottom: -2px; }
 
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 1rem; }
+
 .types__section-title {
   margin-bottom: 2.1rem;
   font-weight: 400; }
