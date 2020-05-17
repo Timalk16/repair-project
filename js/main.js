@@ -31,7 +31,7 @@ $(document).ready(function () {
             }
         });
      
-        $('#scroll_top').click(function(){
+        $('#scroll_top', '#projects').click(function(){
             $('html, body').animate({scrollTop: 0}, 600);
             return false;
         });
@@ -54,7 +54,7 @@ $(document).ready(function () {
          var bullets = $('.swiper-pagination');
 
 
-        next.css('left', prev.width() + 36 + bullets.width() + 36 )
-        bullets.css('left', prev.width() + 36 )
+        next.css('left', prev.width() + 30 + bullets.width() + 30 )
+        bullets.css('left', prev.width() + 30 )
     });
 

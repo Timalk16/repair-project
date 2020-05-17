@@ -347,6 +347,7 @@ template {
     color: rgba(255, 255, 255, 0.5); }
 
 .input {
+  outline: none;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.5);
@@ -410,7 +411,7 @@ template {
   justify-content: space-between; }
 
 .col-30 {
-  flex-basis: 30%; }
+  flex-basis: 32%; }
 
 .col-50 {
   width: 50%; }
@@ -451,7 +452,10 @@ h1, h2, h3, h4, h5, h6 {
     .section-title__heading {
       text-transform: uppercase;
       font-family: 'Yeseva One', cursive;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-bottom: 1.20rem; }
+      .section-title__heading__cards {
+        font-size: 1.4rem; }
       .section-title__heading--primary {
         color: #E3B873; }
       .section-title__heading--left {
@@ -668,6 +672,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; }
 
 .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.3); }
   .swiper-pagination-bullet-active {
     background-color: #fff; }
