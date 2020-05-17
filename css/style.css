@@ -416,7 +416,7 @@ template {
   width: 50%; }
 
 .col-60 {
-  width: 60%; }
+  width: 55%; }
 
 .col-40 {
   width: 40%; }
@@ -455,7 +455,7 @@ h1, h2, h3, h4, h5, h6 {
       .section-title__heading--primary {
         color: #E3B873; }
       .section-title__heading--left {
-        line-height: 1.7; }
+        line-height: 1.6; }
     .section-title__word {
       display: flex;
       align-items: center; }
@@ -662,8 +662,10 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: -1.50rem; }
   .swiper-slide__description {
     font-size: 1.0rem; }
-  .swiper-slide__image img {
-    width: 100%; }
+  .swiper-slide__image {
+    max-width: 100rem; }
+    .swiper-slide__image img {
+      width: 100%; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
