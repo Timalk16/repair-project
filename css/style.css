@@ -560,7 +560,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 4.10rem; }
+    margin-left: 3.5rem; }
   .hero__title {
     font-weight: 400;
     padding-bottom: 0.8rem; }
@@ -697,7 +697,8 @@ h1, h2, h3, h4, h5, h6 {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   position: absolute;
   width: auto;
-  bottom: -2px; }
+  bottom: -2px;
+  margin-left: -1rem; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 1rem; }

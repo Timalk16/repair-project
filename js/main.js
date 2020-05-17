@@ -31,11 +31,19 @@ $(document).ready(function () {
             }
         });
      
-        $('#scroll_top', '#projects').click(function(){
+        $('#scroll_top').click(function(){
             $('html, body').animate({scrollTop: 0}, 600);
             return false;
         });
     });
+    //медленный скролл
+    $(function(){
+        $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
+});
     //слайдер
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
@@ -54,7 +62,7 @@ $(document).ready(function () {
          var bullets = $('.swiper-pagination');
 
 
-        next.css('left', prev.width() + 30 + bullets.width() + 30 )
+        next.css('left', prev.width() + 20 + bullets.width() + 20 )
         bullets.css('left', prev.width() + 30 )
     });
 
