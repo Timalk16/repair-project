@@ -849,7 +849,7 @@ h1, h2, h3, h4, h5, h6 {
   .col-60 {
     width: 100%; }
   .types__card {
-    margin-bottom: 4.07rem; }
+    margin-bottom: 6.77rem; }
   .card__text {
     margin-left: 0; }
   .design {
@@ -857,7 +857,7 @@ h1, h2, h3, h4, h5, h6 {
     .design__section-title {
       color: #fff; }
     .design__card {
-      margin-bottom: 5.7rem; }
+      margin-bottom: 7.2rem; }
     .design__description {
       color: #fff; }
   .swiper-slide__image {
@@ -908,19 +908,16 @@ h1, h2, h3, h4, h5, h6 {
   .logo {
     padding-right: 7rem; }
   .hero__content {
-    line-height: 0.7;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column; }
+    line-height: 0.7; }
   .hero__title {
-    font-size: 2.04rem;
+    font-size: 2.06rem;
     line-height: 132.83%; }
   .hero__text {
-    font-size: 1.35rem;
+    font-size: 1.65rem;
     margin-top: 0.5rem;
-    line-height: 1.55;
-    margin-bottom: 3.30rem; }
+    line-height: 1.47;
+    min-width: 29.3rem;
+    margin-bottom: 2.50rem; }
   .hero__button {
     text-align: center;
     font-size: 1.20rem;
@@ -936,6 +933,10 @@ h1, h2, h3, h4, h5, h6 {
     .card__image {
       max-width: 27.90rem;
       min-height: 29rem; }
+    .card__list {
+      line-height: 2.05rem; }
+    .card__item {
+      font-size: 1.20rem; }
     .card__text {
       margin-left: 0;
       max-width: 22.4rem;
@@ -943,17 +944,24 @@ h1, h2, h3, h4, h5, h6 {
     .card__pricetag {
       padding: 1rem 2.65rem;
       text-align: center; }
+    .card__title {
+      font-size: 1.35rem; }
+  .types__section-title {
+    margin-bottom: 4.5rem; }
+  .design__section-title {
+    margin-bottom: 2rem; }
   .design__text {
     min-height: 15rem;
     max-width: 22rem;
     margin-top: -12rem; }
   .design__description {
-    max-width: 25rem;
-    line-height: 1.70rem;
-    font-size: 1.25rem; }
+    max-width: 26.9rem;
+    line-height: 1.9rem;
+    font-size: 1.34rem;
+    margin-bottom: 5.5rem; }
   .design__pricetag {
     left: -0.4rem;
-    padding: 1rem 3.70rem;
+    padding: 1rem 4.5rem;
     margin-left: 0;
     text-align: center; }
   .section-title__text {
@@ -965,6 +973,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem; }
   .section-title__heading {
     font-size: 1.80rem; }
+  .section-title__cards {
+    font-size: 2rem; }
   .swiper-button-prev, .swiper-button-next {
     bottom: 20px; }
   .swiper-slide__text {
