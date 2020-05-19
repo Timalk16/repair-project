@@ -898,7 +898,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.10rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 4.285rem 0; }
+    padding: 4.285rem 0;
+    width: 100%; }
 
 .modal {
   opacity: 0;
@@ -1053,7 +1054,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
     margin-bottom: 0.1rem; }
   .input {
-    min-width: 33rem;
+    min-width: 31rem;
     border-bottom: 1px solid #959595; } }
 
 @media screen and (max-height: 520px) {
@@ -1159,6 +1160,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     margin-top: 0; }
   .control {
+    padding-bottom: 0;
     background: #131313; }
     .control__section-title {
       margin-bottom: 3.60rem; }
@@ -1181,9 +1183,10 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 5.60rem; }
     .control__button {
       order: 4;
-      padding: 1.65rem 4.65rem;
+      padding: 1.60rem 4.65rem;
       border-radius: 0;
-      font-size: 1.40rem; }
+      font-size: 1.40rem;
+      margin-bottom: -1rem; }
     .control__policy {
       display: flex;
       justify-content: flex-start;
@@ -1201,7 +1204,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-left: -1rem; }
   .input {
     color: #fff;
-    min-width: 31rem;
+    min-width: 29rem;
     border-bottom: 1px solid #959595; }
     .input::-webkit-input-placeholder {
       color: #fff;
@@ -1221,6 +1224,14 @@ h1, h2, h3, h4, h5, h6 {
   .video__play {
     width: 37px;
     height: 60px; }
+  .footer__wrap {
+    background: none; }
+  .footer__input {
+    max-width: 26rem !important; }
+  .footer__button {
+    padding: 1.70rem 2rem;
+    margin-left: -3rem;
+    max-width: 3rem; }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 20px; } }
 

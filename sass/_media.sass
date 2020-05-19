@@ -89,7 +89,6 @@
             min-width: 22.86rem
             margin-bottom: 1.85rem
     .control
-        .control
         &__input-group
             flex-basis: 51%
             &:not(:last-child)
@@ -115,7 +114,7 @@
             font-size: 1.4rem
             margin-bottom: 0.1rem
     .input
-        min-width: 33rem
+        min-width: 31rem
         border-bottom: 1px solid $secondary
 @media screen and ( max-height: 520px  )
     .hero
@@ -233,6 +232,7 @@
                 margin-left: 0
                 margin-top: 0
     .control
+        padding-bottom: 0
         background: $dark
         &__section-title
             margin-bottom: 3.60rem
@@ -255,9 +255,10 @@
                 margin-bottom: 5.60rem
         &__button
             order: 4
-            padding: 1.65rem 4.65rem
+            padding: 1.60rem 4.65rem
             border-radius: 0
             font-size: 1.40rem
+            margin-bottom: -1rem
         &__policy
             display: flex
             justify-content: flex-start  
@@ -275,7 +276,7 @@
             margin-left: -1rem
     .input
         color: $light
-        min-width: 31rem
+        min-width: 29rem
         border-bottom: 1px solid $secondary
         &::placeholder
             color: $light
@@ -284,7 +285,15 @@
         &__play
             width: 37px
             height: 60px
-
+    .footer
+        &__wrap
+            background: none
+        &__input
+            max-width: 26rem !important
+        &__button
+            padding: 1.70rem 2rem
+            margin-left: -3rem
+            max-width: 3rem
     .swiper-container-horizontal>.swiper-pagination-bullets
         bottom: 20px
                 
