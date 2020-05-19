@@ -88,10 +88,39 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    .control
+        .control
+        &__input-group
+            flex-basis: 51%
+            &:not(:last-child)
+                margin-bottom: 5.60rem
+        &__form
+            margin-top: -1.70rem
+            max-width: 55rem
+        &__button
+            order: 4
+            padding: 1.85rem 4.65rem
+            border-radius: 0
+        &__policy
+            display: flex
+            justify-content: flex-start  
+            margin-top: -3rem
+            margin-bottom: 5.70rem  
+            margin-left: -1rem
+            color: $dark
+            font-size: 1.35rem
+            margin-left: 0
+        &__label
+            color: $secondary
+            font-size: 1.4rem
+            margin-bottom: 0.1rem
+    .input
+        min-width: 33rem
+        border-bottom: 1px solid $secondary
 @media screen and ( max-height: 520px  )
     .hero
         &__scroll-down
-            display: none
+            display: none         
 @media screen and ( max-width: 390px )
     .row
         &--left
@@ -209,6 +238,7 @@
             margin-bottom: 3.60rem
         &__video
             min-height: 19rem
+            background: $dark url('../img/video-mask2.jpg') no-repeat center 
         &__text
             color:  $light
             font-size: 1.27rem
@@ -225,8 +255,9 @@
                 margin-bottom: 5.60rem
         &__button
             order: 4
-            padding: 1.80rem 4.65rem
+            padding: 1.65rem 4.65rem
             border-radius: 0
+            font-size: 1.40rem
         &__policy
             display: flex
             justify-content: flex-start  
@@ -234,13 +265,16 @@
             margin-bottom: 5.70rem  
             margin-left: -1rem
             color: $light
-            font-size: 1.35rem
+            font-size: 1.45rem
             margin-left: 0
         &__label
             color: $secondary
             font-size: 1.4rem
             margin-bottom: 0.1rem
+        &__policy-label
+            margin-left: -1rem
     .input
+        color: $light
         min-width: 31rem
         border-bottom: 1px solid $secondary
         &::placeholder
