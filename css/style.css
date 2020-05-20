@@ -410,11 +410,23 @@ template {
 .input.invalid {
   border-bottom: 1px solid tomato; }
 
+.control__policy {
+  position: relative; }
+
+.control__input-group {
+  position: relative; }
+
+.footer__input-group {
+  position: relative; }
+
 em.invalid {
   position: absolute;
   bottom: -20px;
   left: 0;
   color: tomato; }
+
+em#policyCheckbox-error.invalid {
+  left: 300px; }
 
 .container {
   width: 90%;

@@ -70,12 +70,12 @@ $(document).ready(function () {
         errorClass: "invalid",
         errorElement: "em",
         rules: {
-            // simple rule, converted to {required:true}
+            // compound rule
+            policyCheckbox: "required",
             userPhone: {
                 required: true,
                 minlength: 10,
         },
-            // compound rule
             userName: {
                 required: true,
                 minlength: 2,
@@ -92,6 +92,7 @@ $(document).ready(function () {
               minlength: "Имя не короче двух букв",
               maxlength: "Имя не длинее пятнадцати букв"
         },
+          policyCheckbox: "Нажмите галочку",
           userPhone: "Телефон обязателен",
           userEmail: {
             required: "Обязательно укажите email",
@@ -104,12 +105,12 @@ $(document).ready(function () {
         errorClass: "invalid",
         errorElement: "em",
         rules: {
-            // simple rule, converted to {required:true}
+            // compound rule
+            policyCheckbox: "required",
             userPhone: {
                 required: true,
                 minlength: 10,
         },
-            // compound rule
             userName: {
                 required: true,
                 minlength: 2,
@@ -117,12 +118,44 @@ $(document).ready(function () {
             }
         },
         messages: {
+            policyCheckbox: "Нажмите галочку",
+            userPhone: "Телефон обязателен",
           userName: {
               required: "Имя обязательно",
               minlength: "Имя не короче двух букв",
               maxlength: "Имя не длинее пятнадцати букв"
+            },
+        }
+    });
+    //валидация формы 3
+    $('.footer__form').validate({
+        errorClass: "invalid",
+        errorElement: "em",
+        rules: {
+            // compound rule
+            policyCheckbox: "required",
+            userPhone: {
+                required: true,
+                minlength: 10
         },
-          userPhone: "Телефон обязателен",
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userQuestion: {
+                required: true,
+            }
+        },
+        messages: {
+            policyCheckbox: "Нажмите галочку",
+            userPhone: "Телефон обязателен",
+            userQuestion: "Задайте вопрос",
+          userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух букв",
+              maxlength: "Имя не длинее пятнадцати букв"
+            },
         }
     });
 
