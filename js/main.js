@@ -65,7 +65,75 @@ $(document).ready(function () {
         next.css('left', prev.width() + 20 + bullets.width() + 20 )
         bullets.css('left', prev.width() + 30 )
     
+    //валидация формы
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        errorElement: "em",
+        rules: {
+            // simple rule, converted to {required:true}
+            userPhone: {
+                required: true,
+                minlength: 10,
+        },
+            // compound rule
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userEmail: {
+              required: true,
+              email: true
+            }
+        },
+        messages: {
+          userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух букв",
+              maxlength: "Имя не длинее пятнадцати букв"
+        },
+          userPhone: "Телефон обязателен",
+          userEmail: {
+            required: "Обязательно укажите email",
+            email: "Введите в формате: name@domain.com"
+          }
+        }
+    });
+    //валидация формы 2
+    $('.control__form').validate({
+        errorClass: "invalid",
+        errorElement: "em",
+        rules: {
+            // simple rule, converted to {required:true}
+            userPhone: {
+                required: true,
+                minlength: 10,
+        },
+            // compound rule
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            }
+        },
+        messages: {
+          userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух букв",
+              maxlength: "Имя не длинее пятнадцати букв"
+        },
+          userPhone: "Телефон обязателен",
+        }
+    });
+
+    //маска для телефона
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___/__/__"});
+
+
+
+
     new WOW().init();
+
     });
 
 

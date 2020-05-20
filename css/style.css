@@ -404,6 +404,18 @@ template {
     .down__button:focus {
       border: none; }
 
+.input-group {
+  position: relative; }
+
+.input.invalid {
+  border-bottom: 1px solid tomato; }
+
+em.invalid {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: tomato; }
+
 .container {
   width: 90%;
   max-width: 89.36rem;
@@ -945,9 +957,11 @@ h1, h2, h3, h4, h5, h6 {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: 0.1rem; }
   .modal__policy {
     margin-bottom: 2.79rem; }
@@ -1054,7 +1068,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
     margin-bottom: 0.1rem; }
   .input {
-    min-width: 31rem;
+    min-width: 29rem;
     border-bottom: 1px solid #959595; } }
 
 @media screen and (max-height: 520px) {
@@ -1204,34 +1218,52 @@ h1, h2, h3, h4, h5, h6 {
       margin-left: -1rem; }
   .input {
     color: #fff;
-    min-width: 29rem;
+    min-width: 31rem;
     border-bottom: 1px solid #959595; }
     .input::-webkit-input-placeholder {
       color: #fff;
-      font-size: 1.65rem; }
+      font-size: 1.70rem; }
     .input::-moz-placeholder {
       color: #fff;
-      font-size: 1.65rem; }
+      font-size: 1.70rem; }
     .input:-ms-input-placeholder {
       color: #fff;
-      font-size: 1.65rem; }
+      font-size: 1.70rem; }
     .input::-ms-input-placeholder {
       color: #fff;
-      font-size: 1.65rem; }
+      font-size: 1.70rem; }
     .input::placeholder {
       color: #fff;
-      font-size: 1.65rem; }
+      font-size: 1.70rem; }
   .video__play {
     width: 37px;
     height: 60px; }
-  .footer__wrap {
-    background: none; }
-  .footer__input {
-    max-width: 26rem !important; }
-  .footer__button {
-    padding: 1.70rem 2rem;
-    margin-left: -3rem;
-    max-width: 3rem; }
+  .footer {
+    background: #131313; }
+    .footer__form {
+      margin-left: -2.5rem; }
+    .footer__title {
+      font-size: 1.828rem;
+      margin-bottom: 4.914rem; }
+    .footer__label {
+      font-size: 1.3rem; }
+    .footer__policy {
+      flex-basis: 90.2%;
+      margin-top: -5.2rem;
+      margin-bottom: 6.2rem; }
+    .footer__wrap {
+      background: none; }
+    .footer__input {
+      max-width: 26rem !important; }
+      .footer__input-group {
+        margin-bottom: 6rem; }
+    .footer__button {
+      border-radius: 0;
+      font-size: 1.40rem;
+      padding: 1.70rem 1.20rem;
+      max-width: 3rem; }
+  .policy__label--center {
+    font-size: 1.46rem; }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 20px; } }
 
@@ -1242,4 +1274,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2.60rem;
     min-width: 28rem; }
   .button--outline {
-    min-width: 28rem; } }
+    min-width: 28rem; }
+  .input {
+    min-width: 27rem; } }

@@ -44,7 +44,7 @@
         &:checked +
             .policy__label
                 &::before
-                    background: $primary   url('../img/check.svg')  no-repeat center / 0.8rem              
+                    background: $primary   url('../img/check.svg')  no-repeat center / 0.8rem             
     &__label
         display: flex
         align-items: center
@@ -74,4 +74,14 @@
         border: none
         &:focus
             border: none
+.input
+    &-group
+        position: relative
+    &.invalid
+        border-bottom: 1px solid tomato
+em.invalid
+    position: absolute
+    bottom: -20px
+    left: 0
+    color: tomato
             
