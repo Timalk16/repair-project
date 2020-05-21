@@ -425,13 +425,19 @@ em.invalid {
 .control__policy {
   position: relative; }
 
+.footer__policy {
+  position: relative; }
+
+.modal__policy {
+  position: relative; }
+
 em#policyCheckbox-error.invalid {
   position: absolute;
   left: 300px; }
 
 em#policyFooter-error.invalid {
   position: absolute;
-  color: tomato; }
+  left: 150px; }
 
 .container {
   width: 90%;
@@ -1119,7 +1125,9 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #959595; }
   em#policyCheckbox-error.invalid {
     left: 20px;
-    font-size: 1.10rem; } }
+    font-size: 1.10rem; }
+  em#policyFooter-error.invalid {
+    left: 100px; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
@@ -1323,6 +1331,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.63rem;
     line-height: 2.3rem;
     max-width: 30rem; }
+  em#policyFooter-error.invalid {
+    left: 20px; }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 20px; } }
 

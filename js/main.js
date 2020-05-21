@@ -78,7 +78,7 @@ $(document).ready(function () {
         errorElement: "em",
         rules: {
             // compound rule
-            policyCheckbox: "required",
+            policyModal: "required",
             userPhone: {
                 required: true,
                 minlength: 17,
@@ -98,7 +98,7 @@ $(document).ready(function () {
               minlength: "Имя не короче двух букв",
               maxlength: "Имя не длинее пятнадцати букв"
         },
-          policyCheckbox: "Нажмите галочку",
+          policyModal: "Нажмите галочку",
           userPhone: "Телефон обязателен",
           userEmail: {
             required: "Обязательно укажите email",
@@ -180,7 +180,7 @@ $(document).ready(function () {
     });
 
     //маска для телефона
-    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___/__/__"});
+    $('[type=tel]').mask('+7(000) 000-00-00');
 
 
 
