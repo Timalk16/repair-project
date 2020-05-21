@@ -431,7 +431,7 @@ em#policyCheckbox-error.invalid {
 
 em#policyFooter-error.invalid {
   position: absolute;
-  margin-top: 1.5rem; }
+  color: tomato; }
 
 .container {
   width: 90%;
@@ -1312,8 +1312,17 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.40rem;
       padding: 1.70rem 1.20rem;
       max-width: 3rem; }
+    .footer__map {
+      display: flex;
+      order: 1; }
+    .footer__address {
+      order: 99; }
   .policy__label--center {
     font-size: 1.46rem; }
+  .address__description {
+    font-size: 1.63rem;
+    line-height: 2.3rem;
+    max-width: 30rem; }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 20px; } }
 
