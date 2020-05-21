@@ -924,6 +924,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #131313;
     padding: 4.285rem 0;
     width: 100%; }
+  .footer__map {
+    margin-bottom: 3.80rem; }
 
 .modal {
   opacity: 0;

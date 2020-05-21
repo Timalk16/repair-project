@@ -74,12 +74,11 @@ $(document).ready(function () {
             policyCheckbox: "required",
             userPhone: {
                 required: true,
-                minlength: 10,
+                minlength: 17,
         },
             userName: {
                 required: true,
-                minlength: 2,
-                maxlength: 15
+                minlength: 2
             },
             userEmail: {
               required: true,
@@ -109,7 +108,7 @@ $(document).ready(function () {
             policyCheckbox: "required",
             userPhone: {
                 required: true,
-                minlength: 10,
+                minlength: 17,
         },
             userName: {
                 required: true,
@@ -136,7 +135,7 @@ $(document).ready(function () {
             policyCheckbox: "required",
             userPhone: {
                 required: true,
-                minlength: 10
+                minlength: 17
         },
             userName: {
                 required: true,
