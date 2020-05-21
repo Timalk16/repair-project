@@ -426,7 +426,12 @@ em.invalid {
   position: relative; }
 
 em#policyCheckbox-error.invalid {
+  position: absolute;
   left: 300px; }
+
+em#policyFooter-error.invalid {
+  position: absolute;
+  margin-top: 1.5rem; }
 
 .container {
   width: 90%;

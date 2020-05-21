@@ -67,6 +67,13 @@ $(document).ready(function () {
     
     //валидация формы
     $('.modal__form').validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("type") == "checkbox") {
+                return element.next('label').append(error);
+            }
+        
+             error.insertAfter($(element));
+        },
         errorClass: "invalid",
         errorElement: "em",
         rules: {
@@ -120,7 +127,7 @@ $(document).ready(function () {
             userName: {
                 required: true,
                 minlength: 2,
-                maxlength: 15
+                maxlength: 15,
             }
         },
         messages: {
@@ -135,26 +142,33 @@ $(document).ready(function () {
     });
     //валидация формы 3
     $('.footer__form').validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("type") == "checkbox") {
+                return element.next('label').append(error);
+            }
+        
+             error.insertAfter($(element));
+        },
         errorClass: "invalid",
         errorElement: "em",
         rules: {
             // compound rule
-            policyCheckbox: "required",
+            policyFooter: "required",
             userPhone: {
                 required: true,
-                minlength: 17
+                minlength: 17,
         },
             userName: {
                 required: true,
                 minlength: 2,
-                maxlength: 15
+                maxlength: 15,
             },
             userQuestion: {
                 required: true,
             }
         },
         messages: {
-            policyCheckbox: "Нажмите галочку",
+            policyFooter: "Нажмите галочку",
             userPhone: "Телефон обязателен",
             userQuestion: "Задайте вопрос",
           userName: {
