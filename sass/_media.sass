@@ -30,6 +30,8 @@
         &-slide
             &__text
                 flex-basis: 42%
+    em#policyCheckbox-error.invalid
+        left: 250px
 @media screen and ( max-width: 845px )
     .row
         flex-direction: column
@@ -57,7 +59,8 @@
         &-slide
             &__image
                padding-top: 1.30rem 
-
+    em#policyCheckbox-error.invalid
+        left: 220px
                   
 @media screen and ( max-width: 570px )
     .row
@@ -116,6 +119,9 @@
     .input
         min-width: 29rem
         border-bottom: 1px solid $secondary
+    em#policyCheckbox-error.invalid
+        left: 20px
+        font-size: 1.10rem
 @media screen and ( max-height: 520px  )
     .hero
         &__scroll-down

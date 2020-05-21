@@ -101,6 +101,13 @@ $(document).ready(function () {
     });
     //валидация формы 2
     $('.control__form').validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("type") == "checkbox") {
+                return element.next('label').append(error);
+            }
+        
+             error.insertAfter($(element));
+        },
         errorClass: "invalid",
         errorElement: "em",
         rules: {

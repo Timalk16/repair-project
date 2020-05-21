@@ -410,9 +410,6 @@ template {
 .input.invalid {
   border-bottom: 1px solid tomato; }
 
-.control__policy {
-  position: relative; }
-
 .control__input-group {
   position: relative; }
 
@@ -424,6 +421,9 @@ em.invalid {
   bottom: -20px;
   left: 0;
   color: tomato; }
+
+.control__policy {
+  position: relative; }
 
 em#policyCheckbox-error.invalid {
   left: 300px; }
@@ -925,7 +925,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 4.285rem 0;
     width: 100%; }
   .footer__map {
+    max-width: 890px;
+    margin: 0 auto;
     margin-bottom: 3.80rem; }
+  .footer__address {
+    margin-top: 3.71rem;
+    margin-bottom: 3.07rem; }
+    .footer__address-image {
+      margin: auto;
+      text-align: center; }
+
+.address__description {
+  display: block;
+  color: #E3B873;
+  font-family: Yeseva One, cursive;
+  max-width: 32.71rem;
+  font-size: 1.43rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.60rem; }
+
+.email-icon {
+  margin-right: 0.8rem; }
 
 .modal {
   opacity: 0;
@@ -1006,7 +1030,9 @@ h1, h2, h3, h4, h5, h6 {
   .hero__content {
     margin-left: 0; }
   .swiper-slide__text {
-    flex-basis: 42%; } }
+    flex-basis: 42%; }
+  em#policyCheckbox-error.invalid {
+    left: 250px; } }
 
 @media screen and (max-width: 845px) {
   .row {
@@ -1029,7 +1055,9 @@ h1, h2, h3, h4, h5, h6 {
     .design__description {
       color: #fff; }
   .swiper-slide__image {
-    padding-top: 1.30rem; } }
+    padding-top: 1.30rem; }
+  em#policyCheckbox-error.invalid {
+    left: 220px; } }
 
 @media screen and (max-width: 570px) {
   .row--left {
@@ -1083,7 +1111,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.1rem; }
   .input {
     min-width: 29rem;
-    border-bottom: 1px solid #959595; } }
+    border-bottom: 1px solid #959595; }
+  em#policyCheckbox-error.invalid {
+    left: 20px;
+    font-size: 1.10rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
