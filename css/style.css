@@ -1027,9 +1027,13 @@ h1, h2, h3, h4, h5, h6 {
     .modal__input-group:last-of-type {
       margin-bottom: 0.1rem; }
   .modal__policy {
-    margin-bottom: 2.79rem; }
+    font-size: 1.15rem;
+    margin-top: -3.7rem;
+    margin-bottom: 2.70rem; }
   .modal__button {
-    align-self: flex-end; }
+    font-size: 1rem;
+    align-self: flex-end;
+    padding: 1.40rem 3.40rem; }
 
 @media screen and (max-width: 1440px) {
   .button--outline {
@@ -1202,10 +1206,9 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.20rem; }
     .card__text {
       margin-left: 0;
-      max-width: 22.4rem;
       margin-top: -10.4rem; }
     .card__pricetag {
-      padding: 1rem 2.65rem;
+      padding: 1rem 3.20rem;
       text-align: center; }
     .card__title {
       font-size: 1.35rem; }
