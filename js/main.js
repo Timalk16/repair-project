@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
+        modalMessage = $('.message');
         closeBtn = $('.modal__close');
 
     modalBtn.on('click', function () {
@@ -11,13 +12,15 @@ $(document).ready(function () {
         if (eventObject.which == 27)
         modal.toggleClass('modal--visible');
     });
-    
+
     // закрытие модального окна при клике вне него
     $(document).click(function (e) {
         if ($(e.target).is('.modal')) {
             modal.toggleClass('modal--visible');
         }
     });
+
+    
     closeBtn.on('click', function () {
         modal.toggleClass('modal--visible');
     });
@@ -35,6 +38,10 @@ $(document).ready(function () {
             $('html, body').animate({scrollTop: 0}, 600);
             return false;
         });
+    });
+    //
+    $('.message__button').click(function () {
+        modalMessage.toggleClass('message--visible');
     });
     //медленный скролл
     $(function(){
@@ -104,7 +111,22 @@ $(document).ready(function () {
             required: "Обязательно укажите email",
             email: "Введите в формате: name@domain.com"
           }
-        }
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                    modalMessage.addClass('message--visible');
+                },
+                error: function (response) {
+                    console.log('Ошибка запроса ' + response);
+                  }
+            });
+          }
     });
     //валидация формы 2
     $('.control__form').validate({
@@ -138,7 +160,10 @@ $(document).ready(function () {
               minlength: "Имя не короче двух букв",
               maxlength: "Имя не длинее пятнадцати букв"
             },
-        }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit();
+          }
     });
     //валидация формы 3
     $('.footer__form').validate({
@@ -176,7 +201,10 @@ $(document).ready(function () {
               minlength: "Имя не короче двух букв",
               maxlength: "Имя не длинее пятнадцати букв"
             },
-        }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit();
+          }
     });
 
     //маска для телефона
