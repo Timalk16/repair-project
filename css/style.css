@@ -318,6 +318,10 @@ template {
   font-style: normal;
   font-display: swap; }
 
+a {
+  text-decoration: none;
+  color: #E3B873; }
+
 .button {
   padding: 11px 24px;
   border: none;
@@ -936,7 +940,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 4.285rem 0;
     width: 100%; }
   .footer__map {
-    max-width: 890px;
+    max-width: 924px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 3.80rem; }
   .footer__address {
@@ -945,6 +950,10 @@ h1, h2, h3, h4, h5, h6 {
     .footer__address-image {
       margin: auto;
       text-align: center; }
+  .footer__phone {
+    transition: 0.2s; }
+    .footer__phone:hover {
+      color: #fff; }
 
 .address__description {
   display: block;
@@ -961,6 +970,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .email-icon {
   margin-right: 0.8rem; }
+
+.map__text {
+  display: flex;
+  flex-direction: column;
+  max-height: 1000px; }
 
 .modal {
   opacity: 0;
@@ -1123,11 +1137,21 @@ h1, h2, h3, h4, h5, h6 {
   .input {
     min-width: 29rem;
     border-bottom: 1px solid #959595; }
+  .footer__input {
+    min-width: 33rem; }
+  .footer__button {
+    padding: 1.285rem 13rem; }
   em#policyCheckbox-error.invalid {
     left: 20px;
     font-size: 1.10rem; }
   em#policyFooter-error.invalid {
     left: 100px; } }
+
+@media screen and (max-width: 440px) {
+  .footer__input {
+    min-width: 28rem; }
+  .footer__button {
+    padding: 1.285rem 10rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
@@ -1322,15 +1346,28 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 3rem; }
     .footer__map {
       display: flex;
-      order: 1; }
+      order: 1;
+      height: 22,857rem;
+      margin-bottom: 0.2rem; }
     .footer__address {
-      order: 99; }
+      order: 20; }
+    .footer__menu {
+      display: none; }
+  .ymaps {
+    max-height: 100px; }
   .policy__label--center {
     font-size: 1.46rem; }
   .address__description {
     font-size: 1.63rem;
     line-height: 2.3rem;
     max-width: 30rem; }
+  .email-icon {
+    width: 40px;
+    height: 41.5px;
+    margin-right: 1.9rem; }
+  .instagram-icon {
+    width: 40px;
+    height: 41.5px; }
   em#policyFooter-error.invalid {
     left: 20px; }
   .swiper-container-horizontal > .swiper-pagination-bullets {

@@ -119,11 +119,23 @@
     .input
         min-width: 29rem
         border-bottom: 1px solid $secondary
+    .footer
+        &__input
+            min-width: 33rem
+        &__button
+            padding: 1.285rem 13rem
     em#policyCheckbox-error.invalid
         left: 20px
         font-size: 1.10rem
     em#policyFooter-error.invalid
         left: 100px
+
+@media screen and ( max-width: 440px )
+    .footer
+        &__input
+            min-width: 28rem
+        &__button
+            padding: 1.285rem 10rem
 @media screen and ( max-height: 520px  )
     .hero
         &__scroll-down
@@ -321,8 +333,14 @@
         &__map
             display: flex
             order: 1
+            height: 22,857rem
+            margin-bottom: 0.2rem
         &__address
-            order: 99
+            order: 20
+        &__menu
+            display: none
+    .ymaps
+        max-height: 100px
     .policy
         &__label
                 &--center
@@ -332,6 +350,15 @@
             font-size: 1.63rem
             line-height: 2.3rem
             max-width: 30rem
+    .email
+        &-icon
+            width: 40px
+            height: 41.5px
+            margin-right: 1.9rem
+    .instagram
+        &-icon
+            width: 40px
+            height: 41.5px
     em#policyFooter-error.invalid
         left: 20px
     .swiper-container-horizontal>.swiper-pagination-bullets
