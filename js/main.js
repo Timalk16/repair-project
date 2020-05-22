@@ -162,7 +162,19 @@ $(document).ready(function () {
             },
         },
         submitHandler: function(form) {
-            $(form).ajaxSubmit();
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                    modalMessage.addClass('message--visible');
+                },
+                error: function (response) {
+                    console.log('Ошибка запроса ' + response);
+                  }
+            });
           }
     });
     //валидация формы 3
@@ -203,7 +215,19 @@ $(document).ready(function () {
             },
         },
         submitHandler: function(form) {
-            $(form).ajaxSubmit();
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                    modalMessage.addClass('message--visible');
+                },
+                error: function (response) {
+                    console.log('Ошибка запроса ' + response);
+                  }
+            });
           }
     });
 
