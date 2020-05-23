@@ -1093,6 +1093,8 @@ h1, h2, h3, h4, h5, h6 {
   .hero__content {
     margin-left: 4rem; }
   .button--outline {
+    padding: 18px 48px; }
+  .button--primary {
     padding: 18px 48px; } }
 
 @media screen and (max-width: 992px) {
@@ -1108,6 +1110,24 @@ h1, h2, h3, h4, h5, h6 {
     flex-basis: 42%; }
   em#policyCheckbox-error.invalid {
     left: 250px; } }
+
+@media screen and (max-width: 992px) {
+  .button--primary:hover, .button--outline:hover {
+    box-shadow: none; }
+  .logo a:hover {
+    color: #E3B873; }
+  .contacts__phone:hover {
+    color: #E3B873; }
+  .hero__scroll-down:hover {
+    color: #fff; }
+  .instagram__link:hover {
+    font-size: 1.1rem; }
+  .footer__phone:hover {
+    color: #E3B873; }
+  .instagram-icon:hover {
+    box-shadow: none; }
+  .email-icon:hover {
+    box-shadow: none; } }
 
 @media screen and (max-width: 845px) {
   .row {
@@ -1218,6 +1238,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; }
     .col-60 {
       width: 100%; }
+    .col-30 {
+      margin-left: -1.7rem; }
   .logo {
     padding-right: 7rem; }
   .hero__content {
@@ -1264,7 +1286,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem; }
   .design__text {
     min-height: 15rem;
-    max-width: 22rem;
     margin-top: -12rem; }
   .design__description {
     max-width: 26.9rem;

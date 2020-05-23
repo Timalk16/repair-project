@@ -16,6 +16,8 @@
     .button
         &--outline
             padding: 18px 48px
+        &--primary
+            padding: 18px 48px
 @media screen and ( max-width: 992px )
     html
         font-size: 11px
@@ -32,6 +34,39 @@
                 flex-basis: 42%
     em#policyCheckbox-error.invalid
         left: 250px
+@media screen and ( max-width: 992px )
+    .button
+        &--primary, &--outline
+            &:hover
+                box-shadow: none
+    .logo
+        & a
+            &:hover
+                color: $primary    
+    .contacts
+        &__phone
+            &:hover
+                color: $primary   
+    .hero
+        &__scroll-down
+            &:hover
+                color: $light 
+    .instagram
+        &__link
+            &:hover
+                font-size: 1.1rem
+    .footer
+        &__phone
+            &:hover
+                color: $primary  
+    .instagram
+        &-icon
+            &:hover
+                box-shadow: none
+    .email
+        &-icon
+            &:hover
+                box-shadow: none
 @media screen and ( max-width: 845px )
     .row
         flex-direction: column
@@ -152,6 +187,8 @@
             width: 100% 
         &-60
             width: 100%  
+        &-30
+            margin-left: -1.7rem
     .logo
         padding-right: 7rem
     .hero
@@ -204,7 +241,6 @@
                 margin-bottom: 2rem
         &__text
             min-height: 15rem
-            max-width: 22rem
             margin-top: -12rem   
         &__description 
             max-width: 26.9rem
