@@ -452,6 +452,8 @@ em#policyFooter-error.invalid {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
+  .row__team {
+    padding: 0px 5rem; }
 
 .col-30 {
   flex-basis: 32%; }
@@ -466,7 +468,8 @@ em#policyFooter-error.invalid {
   width: 40%; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: none; }
 
 html {
   font-size: 14px; }
@@ -808,11 +811,13 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column; }
 
 .control__label {
-  margin-bottom: -7px; }
+  margin-bottom: -7px;
+  color: #959595; }
 
 .control__button {
   padding: 1.286rem 4.65rem;
-  margin-right: 0.1rem; }
+  margin-right: 0.1rem;
+  font-size: 1.1rem; }
 
 .control__policy {
   flex-basis: 100%;
@@ -822,23 +827,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .control__input::-webkit-input-placeholder {
   color: #131313;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .control__input::-moz-placeholder {
   color: #131313;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .control__input:-ms-input-placeholder {
   color: #131313;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .control__input::-ms-input-placeholder {
   color: #131313;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .control__input::placeholder {
   color: #131313;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .video__play {
   position: relative;
@@ -896,6 +901,85 @@ h1, h2, h3, h4, h5, h6 {
 .design__pricetag {
   padding: 1.214rem 6.40rem;
   padding-left: 2rem; }
+
+.team__section-title {
+  font-size: 0.96rem;
+  margin-bottom: 1.40rem; }
+
+.team__description {
+  font-size: 1.43rem;
+  margin: auto;
+  text-align: center;
+  max-width: 32.41rem;
+  line-height: 1.928rem;
+  margin-bottom: 6rem; }
+
+.team__card {
+  position: relative;
+  margin-bottom: 3.9rem; }
+
+.team__icon {
+  position: absolute;
+  top: -3.6rem;
+  left: -1rem; }
+
+.team__people {
+  display: block;
+  margin: auto;
+  height: 358px;
+  width: 304px; }
+
+.team__person {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  margin-top: -5.9rem;
+  background-color: #fff;
+  max-width: 16.64rem; }
+
+.team__about {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  font-size: 1.286rem;
+  padding: 1.66rem 1.43rem; }
+
+.team__name {
+  font-family: 'Yeseva One', cursive;
+  line-height: 25px;
+  margin-bottom: 0.2rem; }
+
+.team__work {
+  color: #959595; }
+
+.team__experience {
+  font-family: 'Yeseva One', cursive;
+  font-size: 0.93rem;
+  color: #fff;
+  background-color: #E3B873;
+  padding: 1rem 0;
+  text-transform: uppercase; }
+
+.team__description-bottom {
+  max-width: 40.57rem;
+  font-size: 1.428rem;
+  line-height: 1.7;
+  text-align: center;
+  margin: auto; }
+  .team__description-bottom::before {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    margin: auto;
+    margin-bottom: 0.6rem; }
+
+.card__image-wrap {
+  width: 272px;
+  overflow: hidden;
+  margin: auto; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -1068,7 +1152,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 36.36rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
-    color: #ffffff; }
+    color: #fff; }
   .message__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -1112,6 +1196,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 250px; } }
 
 @media screen and (max-width: 992px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
   .button--primary:hover, .button--outline:hover {
     box-shadow: none; }
   .logo a:hover {
@@ -1130,9 +1217,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none; } }
 
 @media screen and (max-width: 845px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
   .col-40 {
     width: 100%; }
   .col-60 {
@@ -1280,6 +1364,8 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center; }
     .card__title {
       font-size: 1.35rem; }
+    .card__image-wrap {
+      width: 304px; }
   .types__section-title {
     margin-bottom: 4.5rem; }
   .design__section-title {
@@ -1390,6 +1476,38 @@ h1, h2, h3, h4, h5, h6 {
   .video__play {
     width: 37px;
     height: 60px; }
+  .team__work {
+    font-size: 1.6rem; }
+  .team__icon {
+    top: -4.6rem;
+    left: -5rem; }
+  .team__name {
+    font-size: 1.63rem; }
+  .team__section-title {
+    margin-bottom: 1.80rem; }
+  .team__card {
+    margin-left: 4.7rem;
+    margin-bottom: 8.1rem; }
+  .team__description {
+    font-size: 1.37rem;
+    margin-bottom: 7.30rem; }
+  .team__people {
+    width: 304px; }
+  .team__person {
+    margin-top: -7.4rem;
+    max-width: 21.24rem;
+    margin-left: 2.7rem; }
+  .team__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding: 1.94rem 1.43rem; }
+  .team__experience {
+    font-size: 1.19rem;
+    padding: 1.5rem 0; }
+  .team__description-bottom {
+    display: none; }
   .footer {
     background: #131313; }
     .footer__form {
