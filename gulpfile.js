@@ -28,6 +28,9 @@ const browserSync = require('browser-sync').create();
         .pipe(autoprefixer({
             cascade: false
         }))
+        .pipe(autoprefixer({ 
+            flex: true
+        }))
         .pipe(dest("./css"))
         .pipe(browserSync.stream());
 };

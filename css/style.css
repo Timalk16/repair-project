@@ -454,9 +454,14 @@ em#policyFooter-error.invalid {
   justify-content: space-between; }
   .row__team {
     padding: 0px 5rem; }
+  .row__clients {
+    padding: 0 0.6rem; }
 
 .col-30 {
   flex-basis: 32%; }
+
+.col-32 {
+  flex-basis: 30.5%; }
 
 .col-50 {
   width: 50%; }
@@ -534,6 +539,9 @@ h1, h2, h3, h4, h5, h6 {
         height: 2px;
         background-color: #E3B873;
         margin: 0 10px; }
+
+.input {
+  outline: none; }
 
 .header {
   position: fixed;
@@ -887,99 +895,166 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
-.design__section-title {
-  margin-bottom: 1.10rem; }
+.design {
+  background: linear-gradient(to top, #131313 50%, #fff 50%); }
+  .design__section-title {
+    margin-bottom: 1.10rem; }
+  .design__description {
+    margin: 0 auto;
+    font-size: 1.43rem;
+    max-width: 52.93rem;
+    margin-bottom: 3.50rem;
+    text-align: center;
+    line-height: 1.93rem; }
+  .design__pricetag {
+    padding: 1.214rem 6.40rem;
+    padding-left: 2rem; }
 
-.design__description {
-  margin: 0 auto;
-  font-size: 1.43rem;
-  max-width: 52.93rem;
-  margin-bottom: 3.50rem;
-  text-align: center;
-  line-height: 1.93rem; }
-
-.design__pricetag {
-  padding: 1.214rem 6.40rem;
-  padding-left: 2rem; }
-
-.team__section-title {
-  font-size: 0.96rem;
-  margin-bottom: 1.40rem; }
-
-.team__description {
-  font-size: 1.43rem;
-  margin: auto;
-  text-align: center;
-  max-width: 32.41rem;
-  line-height: 1.928rem;
-  margin-bottom: 6rem; }
-
-.team__card {
-  position: relative;
-  margin-bottom: 3.9rem; }
-
-.team__icon {
-  position: absolute;
-  top: -3.6rem;
-  left: -1rem; }
-
-.team__people {
-  display: block;
-  margin: auto;
-  height: 358px;
-  width: 304px; }
-
-.team__person {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: auto;
-  margin-top: -5.9rem;
-  background-color: #fff;
-  max-width: 16.64rem; }
-
-.team__about {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  font-size: 1.286rem;
-  padding: 1.66rem 1.43rem; }
-
-.team__name {
-  font-family: 'Yeseva One', cursive;
-  line-height: 25px;
-  margin-bottom: 0.2rem; }
-
-.team__work {
-  color: #959595; }
-
-.team__experience {
-  font-family: 'Yeseva One', cursive;
-  font-size: 0.93rem;
-  color: #fff;
-  background-color: #E3B873;
-  padding: 1rem 0;
-  text-transform: uppercase; }
-
-.team__description-bottom {
-  max-width: 40.57rem;
-  font-size: 1.428rem;
-  line-height: 1.7;
-  text-align: center;
-  margin: auto; }
-  .team__description-bottom::before {
-    content: '';
-    display: block;
-    width: 55px;
-    height: 2px;
-    background-color: #E3B873;
+.team {
+  background: linear-gradient(to bottom, #131313 50%, #fff 50%); }
+  .team__section-title {
+    font-size: 0.96rem;
+    margin-bottom: 1.40rem;
+    color: #fff; }
+  .team__description {
+    font-size: 1.43rem;
     margin: auto;
-    margin-bottom: 0.6rem; }
+    text-align: center;
+    max-width: 32.41rem;
+    line-height: 1.928rem;
+    margin-bottom: 6rem;
+    color: #fff; }
+  .team__card {
+    position: relative;
+    margin-bottom: 3.9rem; }
+  .team__icon {
+    position: absolute;
+    top: -3.6rem;
+    left: -1rem; }
+  .team__people {
+    display: block;
+    margin: auto;
+    height: 358px;
+    width: 304px; }
+  .team__person {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: -5.9rem;
+    background-color: #fff;
+    max-width: 16.64rem; }
+  .team__about {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    font-size: 1.286rem;
+    padding: 1.66rem 1.43rem; }
+  .team__name {
+    font-family: 'Yeseva One', cursive;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 0.2rem; }
+  .team__work {
+    color: #959595; }
+  .team__experience {
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.93rem;
+    color: #fff;
+    background-color: #E3B873;
+    padding: 1rem 0;
+    text-transform: uppercase; }
+  .team__description-bottom {
+    max-width: 40.57rem;
+    font-size: 1.428rem;
+    line-height: 1.7;
+    text-align: center;
+    margin: auto; }
+    .team__description-bottom::before {
+      content: '';
+      display: block;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      margin: auto;
+      margin-bottom: 0.6rem; }
 
 .card__image-wrap {
   width: 272px;
   overflow: hidden;
+  flex-shrink: 0;
   margin: auto; }
+
+.clients {
+  padding-bottom: 27rem; }
+  .clients__section-title {
+    font-size: 0.96rem;
+    margin-bottom: 1.40rem; }
+  .clients__description {
+    max-width: 25.71rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.43rem;
+    line-height: 1.928rem;
+    margin-bottom: 6rem; }
+  .clients__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 26.86rem;
+    padding: 1.81rem 2.28rem 3.7rem 1.43rem;
+    background: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
+  .clients__row {
+    padding: 0 0.6rem; }
+  .clients__name {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.286rem;
+    margin-right: 2rem;
+    line-height: 1.7rem; }
+  .clients__info {
+    display: flex;
+    align-items: center; }
+  .clients__image {
+    margin-right: 1.64rem; }
+  .clients__block {
+    position: absolute;
+    display: flex;
+    left: -2.6rem;
+    bottom: -3.5rem;
+    font-size: 1.29rem;
+    font-family: 'Yeseva One', cursive;
+    color: #fff;
+    padding: 1.214rem 2.586rem; }
+  .clients__text {
+    margin: 0;
+    padding: 0;
+    color: #959595;
+    box-shadow: none;
+    font-size: 1.07rem;
+    line-height: 1.95rem; }
+  .clients__square {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #E3B873;
+    padding: 0.6rem 0.6rem; }
+  .clients__duration {
+    display: flex;
+    align-items: center;
+    background-color: #E3B873;
+    padding: 0.6rem 1.60rem; }
+  .clients__square {
+    margin-right: 1px;
+    text-transform: uppercase; }
+  .clients__icon {
+    margin-left: 0.7rem;
+    margin-right: 0.3rem; }
+  .clients__icon-day {
+    margin-right: 0.95rem;
+    margin-left: -0.5rem; }
+  .clients__days {
+    font-size: 1.20rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -989,7 +1064,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 63.07rem;
     margin: auto;
     padding: 2.5rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.714rem;
+    margin-top: -18.2rem; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1179,7 +1255,9 @@ h1, h2, h3, h4, h5, h6 {
   .button--outline {
     padding: 18px 48px; }
   .button--primary {
-    padding: 18px 48px; } }
+    padding: 18px 48px; }
+  .team__icon {
+    left: -3.1rem; } }
 
 @media screen and (max-width: 1100px) {
   .row__team {
@@ -1197,12 +1275,11 @@ h1, h2, h3, h4, h5, h6 {
   .swiper-slide__text {
     flex-basis: 42%; }
   em#policyCheckbox-error.invalid {
-    left: 250px; } }
+    left: 250px; }
+  .types__card {
+    margin-bottom: 6rem; } }
 
 @media screen and (max-width: 992px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
   .button--primary:hover, .button--outline:hover {
     box-shadow: none; }
   .logo a:hover {
@@ -1219,6 +1296,13 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none; }
   .email-icon:hover {
     box-shadow: none; } }
+
+@media screen and (max-width: 991px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .clients {
+    display: none; } }
 
 @media screen and (max-width: 845px) {
   .col-40 {
@@ -1372,21 +1456,23 @@ h1, h2, h3, h4, h5, h6 {
       width: 304px; }
   .types__section-title {
     margin-bottom: 4.5rem; }
-  .design__section-title {
-    margin-bottom: 2rem; }
-  .design__text {
-    min-height: 15rem;
-    margin-top: -12rem; }
-  .design__description {
-    max-width: 26.9rem;
-    line-height: 1.9rem;
-    font-size: 1.34rem;
-    margin-bottom: 5.5rem; }
-  .design__pricetag {
-    left: -0.4rem;
-    padding: 1rem 4.5rem;
-    margin-left: 0;
-    text-align: center; }
+  .design {
+    background: #131313; }
+    .design__section-title {
+      margin-bottom: 2rem; }
+    .design__text {
+      min-height: 15rem;
+      margin-top: -12rem; }
+    .design__description {
+      max-width: 26.9rem;
+      line-height: 1.9rem;
+      font-size: 1.34rem;
+      margin-bottom: 5.5rem; }
+    .design__pricetag {
+      left: -0.4rem;
+      padding: 1rem 4.5rem;
+      margin-left: 0;
+      text-align: center; }
   .section-title__online {
     font-size: 2rem !important;
     margin-bottom: 2rem; }
@@ -1480,38 +1566,43 @@ h1, h2, h3, h4, h5, h6 {
   .video__play {
     width: 37px;
     height: 60px; }
-  .team__work {
-    font-size: 1.6rem; }
-  .team__icon {
-    top: -4.6rem;
-    left: -5rem; }
-  .team__name {
-    font-size: 1.63rem; }
-  .team__section-title {
-    margin-bottom: 1.80rem; }
-  .team__card {
-    margin-left: 4.7rem;
-    margin-bottom: 8.1rem; }
-  .team__description {
-    font-size: 1.37rem;
-    margin-bottom: 7.30rem; }
-  .team__people {
-    width: 304px; }
-  .team__person {
-    margin-top: -7.4rem;
-    max-width: 21.24rem;
-    margin-left: 2.7rem; }
-  .team__about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    padding: 1.94rem 1.43rem; }
-  .team__experience {
-    font-size: 1.19rem;
-    padding: 1.5rem 0; }
-  .team__description-bottom {
-    display: none; }
+  .team {
+    background: #131313; }
+    .team__section-title {
+      color: #fff; }
+    .team__work {
+      font-size: 1.6rem; }
+    .team__icon {
+      top: -4.6rem;
+      left: -5rem; }
+    .team__name {
+      font-size: 1.63rem; }
+    .team__section-title {
+      margin-bottom: 1.80rem; }
+    .team__card {
+      margin-left: 4.7rem;
+      margin-bottom: 8.1rem; }
+    .team__description {
+      font-size: 1.37rem;
+      margin-bottom: 7.30rem;
+      color: #fff; }
+    .team__people {
+      width: 304px; }
+    .team__person {
+      margin-top: -7.4rem;
+      max-width: 21.24rem;
+      margin-left: 2.7rem; }
+    .team__about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      padding: 1.94rem 1.43rem; }
+    .team__experience {
+      font-size: 1.19rem;
+      padding: 1.5rem 0; }
+    .team__description-bottom {
+      display: none; }
   .footer {
     background: #131313; }
     .footer__form {
@@ -1565,7 +1656,7 @@ h1, h2, h3, h4, h5, h6 {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 20px; } }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
   html {
     font-size: 10px; }
   .button--primary {
@@ -1574,4 +1665,10 @@ h1, h2, h3, h4, h5, h6 {
   .button--outline {
     min-width: 28rem; }
   .input {
-    min-width: 27rem; } }
+    min-width: 27rem; }
+  .team__people {
+    width: 272px; }
+  .team__icon {
+    left: -5.1em; }
+  .card__image-wrap {
+    width: 272px; } }

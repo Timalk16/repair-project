@@ -18,6 +18,9 @@
             padding: 18px 48px
         &--primary
             padding: 18px 48px
+    .team
+        &__icon
+            left: -3.1rem
 @media screen and ( max-width: 1100px )
     .row
         &__team
@@ -38,10 +41,10 @@
                 flex-basis: 42%
     em#policyCheckbox-error.invalid
         left: 250px
+    .types
+        &__card
+            margin-bottom: 6rem
 @media screen and ( max-width: 992px )
-    .row
-        flex-direction: column
-        align-items: center
     .button
         &--primary, &--outline
             &:hover
@@ -74,6 +77,12 @@
         &-icon
             &:hover
                 box-shadow: none
+@media screen and ( max-width: 991px )
+    .row
+        flex-direction: column
+        align-items: center
+    .clients
+        display: none
 @media screen and ( max-width: 845px )
     .col
         &-40
@@ -242,6 +251,7 @@
             &-title
                 margin-bottom: 4.5rem
     .design
+        background: $dark
         &__section
             &-title
                 margin-bottom: 2rem
@@ -347,6 +357,9 @@
             width: 37px
             height: 60px
     .team
+        background: $dark
+        &__section-title
+            color: $light
         &__work
             font-size: 1.6rem
         &__icon
@@ -362,6 +375,7 @@
         &__description
             font-size: 1.37rem
             margin-bottom: 7.30rem
+            color: $light
         &__people
             width: 304px
         &__person
@@ -438,7 +452,7 @@
     .swiper-container-horizontal>.swiper-pagination-bullets
         bottom: 20px
                 
-@media screen and ( max-width: 359px )
+@media screen and ( max-width: 360px )
     html
         font-size: 10px
     .button
@@ -449,7 +463,15 @@
             min-width: 28rem
     .input
         min-width: 27rem
-       
+    .team
+        &__people
+            width: 272px
+        &__icon
+            left: -5.1em
+    .card
+        &__image-wrap
+            width: 272px
+    
         
         
             

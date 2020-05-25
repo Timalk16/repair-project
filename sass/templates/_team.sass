@@ -1,7 +1,9 @@
 .team
+    background: linear-gradient(to bottom, $dark 50%, $light 50%)
     &__section-title
         font-size: 0.96rem
         margin-bottom: 1.40rem
+        color: $light
     &__description
         font-size: 1.43rem
         margin: auto
@@ -9,6 +11,7 @@
         max-width: 32.41rem
         line-height: 1.928rem
         margin-bottom: 6rem
+        color: $light
     &__card
         position: relative
         margin-bottom: 3.9rem
@@ -38,6 +41,7 @@
     &__name
         font-family: 'Yeseva One', cursive
         line-height: 25px
+        font-weight: 400
         margin-bottom: 0.2rem
     &__work
         color: $secondary
@@ -66,4 +70,5 @@
     &__image-wrap
         width: 272px
         overflow: hidden
+        flex-shrink: 0
         margin: auto
