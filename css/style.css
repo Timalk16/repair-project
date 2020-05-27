@@ -370,6 +370,8 @@ a {
       color: #fff; }
     .input--light::placeholder {
       color: #fff; }
+    .input--light::-moz-placeholder, .input--light :-moz-placeholder {
+      opacity: 1; }
 
 .policy__checkbox {
   opacity: 0;
@@ -855,7 +857,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  transition: 0.2s; }
+  .video__play:hover {
+    color: #fff; }
 
 .types__section-title {
   margin-bottom: 2.1rem;
@@ -996,7 +1001,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 1.43rem;
     line-height: 1.928rem;
-    margin-bottom: 6rem; }
+    margin-bottom: 3.3rem; }
   .clients__card {
     position: relative;
     display: flex;
@@ -1261,7 +1266,18 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 1100px) {
   .row__team {
-    padding: 0 0.7rem; } }
+    padding: 0 0.7rem; }
+  .clients__block {
+    flex-direction: column;
+    left: -2.6rem;
+    bottom: -8rem; }
+  .clients__duration {
+    margin-top: 1rem; }
+  .footer__map {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 3.80rem; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -1302,7 +1318,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center; }
   .clients {
-    display: none; } }
+    display: none; }
+  .team__description-bottom {
+    display: none; }
+  .footer__wrap {
+    margin-top: -10rem; } }
 
 @media screen and (max-width: 845px) {
   .col-40 {
@@ -1323,6 +1343,11 @@ h1, h2, h3, h4, h5, h6 {
       color: #fff; }
   .swiper-slide__image {
     padding-top: 1.30rem; }
+  .footer__map {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 3.80rem; }
   em#policyCheckbox-error.invalid {
     left: 220px; } }
 
@@ -1383,6 +1408,12 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 33rem; }
   .footer__button {
     padding: 1.285rem 13rem; }
+  .footer__map {
+    width: 100%;
+    max-width: 340px;
+    max-height: 255px;
+    margin: auto;
+    margin-bottom: 3.80rem; }
   em#policyCheckbox-error.invalid {
     left: 20px;
     font-size: 1.10rem; }
