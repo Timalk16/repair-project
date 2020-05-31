@@ -21,6 +21,10 @@
     .team
         &__icon
             left: -3.1rem
+    em#policyFooter-error.invalid
+        left: 121.5px
+    em#policyCheckbox-error.invalid
+        left: 250px
 @media screen and ( max-width: 1100px )
     .row
         &__team
@@ -38,6 +42,7 @@
             max-width: 700px
             margin: auto
             margin-bottom: 3.80rem
+
 @media screen and ( max-width: 992px )
     html
         font-size: 11px
@@ -52,8 +57,6 @@
         &-slide
             &__text
                 flex-basis: 42%
-    em#policyCheckbox-error.invalid
-        left: 250px
     .types
         &__card
             margin-bottom: 6rem
@@ -90,6 +93,10 @@
         &-icon
             &:hover
                 box-shadow: none
+    .video
+        &__play
+            &:hover
+                width: 145px
 @media screen and ( max-width: 991px )
     .row
         flex-direction: column
@@ -97,12 +104,26 @@
     .clients
         display: none
     .team
+        background: $dark
         &__description-bottom
             display: none
+    .swiper
+        &-slide
+            &__image
+                margin-top: 4rem
     .footer
         &__wrap
             margin-top: -10rem
-
+    .design
+        background: $dark
+        &__section-title
+            color: $light
+        &__description
+            color: $light
+        &__card
+            margin-bottom: 6.77rem
+    em#policyCheckbox-error.invalid
+        left: 231.8px
 @media screen and ( max-width: 845px )
     .col
         &-40
@@ -134,9 +155,26 @@
             max-
             margin: auto
             margin-bottom: 3.80rem
+    .down
+        &__button
+            display: none
+            position: fixed
+            bottom: 5px
+            right: 6px
+            z-index: 1000
+            height: 29px
+            width: 29px
+            background: url('../img/button-up.svg')   no-repeat center / cover
+            border: none
     em#policyCheckbox-error.invalid
-        left: 220px
-                  
+        left: 234.6px
+    em#control-user-phone-error.invalid
+        bottom: -3.8px
+    em#control-user-name-error.invalid
+        bottom: -3.8px
+@media screen and ( max-width: 620px )
+    em#policyCheckbox-error.invalid
+        left: 206.5px
 @media screen and ( max-width: 570px )
     .row
         &--left
@@ -156,11 +194,12 @@
         &__scroll-down
             display: none
         &__content
-            max-width: 22.86rem
+            max-width: 29.46rem
         &__title
             margin-bottom: 0.1rem
+            font-size: 1.8rem
         &__text
-            font-size: 1.29rem
+            font-size: 1.40rem
             margin-bottom: 2.28rem
         &__button
             display: block
@@ -196,7 +235,7 @@
         border-bottom: 1px solid $secondary
     .footer
         &__input
-            min-width: 33rem
+            min-width: 37rem
         &__button
             padding: 1.285rem 13rem
     .footer
@@ -207,21 +246,42 @@
             margin: auto
             margin-bottom: 3.80rem
     em#policyCheckbox-error.invalid
-        left: 20px
+        left: 36.3px
         font-size: 1.10rem
     em#policyFooter-error.invalid
-        left: 100px
-
+        left: 111.6px
+    em#control-user-phone-error.invalid
+        bottom: -20px
+    em#control-user-name-error.invalid
+        bottom: -20px
+@media screen and ( max-width: 490px )
+    .footer
+        &__input
+            min-width: 35rem
+@media screen and ( max-width: 465px )
+    .footer
+        &__input
+            min-width: 33rem
 @media screen and ( max-width: 440px )
     .footer
         &__input
-            min-width: 28rem
+            min-width: 31rem
         &__button
             padding: 1.285rem 10rem
+@media screen and ( max-width: 416px )
+    .footer
+        &__input
+            min-width: 29rem
 @media screen and ( max-height: 520px  )
     .hero
         &__scroll-down
-            display: none         
+            display: none   
+    .hero
+        &::after
+            display: none    
+@media screen and ( max-width: 410px )
+    em#policyFooter-error.invalid
+        left: 66.4px
 @media screen and ( max-width: 390px )
     .row
         &--left
@@ -262,17 +322,16 @@
         &--outline
             min-width: 31rem
     .card
-        margin-left: 0.2rem
         &__image
-            max-width: 27.90rem
+            max-width: 30.5rem
             min-height: 29rem
         &__list
             line-height: 2.05rem
         &__item
             font-size: 1.20rem
         &__text
-            margin-left: 0
-            margin-top: -10.4rem
+            margin-left: 0rem
+            margin-top: -12.9rem
         &__pricetag
             padding: 1rem 3.20rem
             text-align: center
@@ -281,9 +340,11 @@
         &__image-wrap
             width: 304px
     .types
+        &__card
+            margin-left: 2.2rem
         &__section
             &-title
-                margin-bottom: 4.5rem
+                margin-bottom: 4.1rem
     .design
         background: $dark
         &__section
@@ -291,12 +352,14 @@
                 margin-bottom: 2rem
         &__text
             min-height: 15rem
-            margin-top: -12rem   
+            margin-top: -12.8rem 
+        &__card
+            margin-left: 1.8rem  
         &__description 
             max-width: 26.9rem
             line-height: 1.9rem
             font-size: 1.34rem
-            margin-bottom: 5.5rem
+            margin-bottom: 3.3rem
         &__pricetag
             left: -0.4rem
             padding: 1rem 4.5rem
@@ -342,7 +405,7 @@
         &__section-title
             margin-bottom: 3.60rem
         &__video
-            min-height: 19rem
+            height: 16.7rem
             background: $dark url('../img/video-mask2.jpg') no-repeat center 
         &__text
             color:  $light
@@ -452,6 +515,7 @@
             font-size: 1.40rem
             padding: 1.70rem 1.20rem
             max-width: 3rem
+            margin-bottom: -2.2rem
         &__map
             display: flex
             order: 1
@@ -482,10 +546,15 @@
             width: 40px
             height: 41.5px
     em#policyFooter-error.invalid
-        left: 20px
+        left: 25.7px
     .swiper-container-horizontal>.swiper-pagination-bullets
         bottom: 20px
-                
+@media screen and ( max-width: 370px ) 
+    .modal
+        &__close
+            margin: 21.2px
+    .policy__label--center
+        margin-left: -0.4em     
 @media screen and ( max-width: 360px )
     html
         font-size: 10px
@@ -498,6 +567,8 @@
     .input
         min-width: 27rem
     .team
+        &__card
+            margin-left: 3.9rem
         &__people
             width: 272px
         &__icon
@@ -505,6 +576,27 @@
     .card
         &__image-wrap
             width: 272px
+    .control
+        padding-bottom: 0
+        &__button
+            margin-bottom: -2rem
+            padding: 1.65em 7rem
+    .footer
+        &__input
+            min-width: 28.9rem
+        &__map
+            max-width: 250px
+    .modal
+        &__dialog
+            min-width: 30.76rem
+        &__close
+            margin: 12px
+@media screen and ( max-height: 320px  )
+    .team
+        &__card
+            margin-left: 2.2rem
+
+
     
         
         

@@ -82,7 +82,6 @@ function fonts(done) {
     done();
     
 }
-
 //img
 function imgmin(done) {
     src('img/**/**/*.{png,jpg,jpeg}')
